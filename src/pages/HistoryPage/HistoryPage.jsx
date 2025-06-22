@@ -50,7 +50,7 @@ export const HistoryPage = function() {
         localStorage.removeItem(key);
         setHistoryItems(prev => prev.filter(item => item.key !== key));
         if (openedModalKey === key) {
-            setOpenedModalKey(null); // Закрываем модалку если удалили открытый элемент
+            setOpenedModalKey(null); 
         }
     };
 
@@ -60,7 +60,6 @@ export const HistoryPage = function() {
 
     return (
         <Container>
-            {/* Добавляем portal-контейнер в корень приложения */}
             <div id="modal-root"></div>
             
             <div className={styles.historyContainer}>
@@ -86,7 +85,6 @@ export const HistoryPage = function() {
                                 </svg>
                             </button>
                             
-                            {/* Модальное окно теперь управляется через portal */}
                             <ModalWindow 
                                 metrics={item.metrics}
                                 isOpen={openedModalKey === item.key}
