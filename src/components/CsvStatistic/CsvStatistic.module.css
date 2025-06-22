@@ -1,0 +1,24 @@
+.metric{
+    width: 100%;
+    background: var(--white);
+    height: 117px;
+    border-radius: 24px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    row-gap: 5px;
+}
+
+.tit{
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.paragraph{
+    font-size: 20px;
+    margin: 0;
+}

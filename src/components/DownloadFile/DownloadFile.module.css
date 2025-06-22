@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.uploadButton {
+    padding: 15px 50px;
+    background-color: var(--white);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 35px;
+    line-height: 110%;
+}
+
+
+
+.dropZone {
+    width: 100%;
+    height: 200px;
+    background-color: #EACDFF;
+    border-radius: 40px;
+    justify-content: center;
+    color: var(--black-color);
+    height: 240px;
+    font-size: 35px;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.dropZone.dragging {
+    background-color: var(--greenDropZone);
+}
+
+
+.uploadButton.uploadedButton {
+    background-color: var(--violet);
+}
+.btn{
+    display: flex;
+}
+.hintText{
+    padding: 0;
+    margin: 0;
+}
+
+.uploadButton.invalidType {
+    background-color: var(--error-color); 
+    color: white;
+}
+
+.hintText {
+     padding: 0;
+    margin: 0;
+    color: var(--black-color);
+    font-size: 35px;
+}
+.hintTextError{
+    padding: 0;
+    margin: 0;
+     font-size: 35px;
+    color: var(--error-color);
+}
+
+.hasFile{
+    background: none;
+    border: 2px solid;
+}
+.hasInbvalid{
+    background: none;
+    border: 2px solid var(--error-color);
+}
+
+.uploadButton.error {
+  background-color: var(--error-color); 
+    color: white;
+}
+.uploadButton.processing {
+    color: var(--violet);
+    background-color: var(--violet);
+    position: relative;
+}
+.uploadButton.processing::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 54px;
+    background-image: url('/images/parse.png');
+    background-size: contain;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.uploadButton.done {
+    background-color: #D4FAE6 !important;
+    color: var(--black-color);
+}
+.hasInvalid{
+    background: none !important;
+    border: 2px solid var(--error-color);
+}

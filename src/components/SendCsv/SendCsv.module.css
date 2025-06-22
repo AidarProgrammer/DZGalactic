@@ -1,0 +1,18 @@
+.button{
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 15px 27px;
+    font-size: 35px;
+    background: var(--green);
+    color: var(--dark-green);
+    border: none;
+}
+
+.disabled{
+    background-attachment: var(--violet);
+}
+.activeButton{
+    background: var(--green-green);
+    color: var(--black-color);
+    cursor: pointer;
+}

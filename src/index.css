@@ -1,0 +1,25 @@
+html, body{
+  background: #FCE2FF;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+:root{
+  --black-color: #201B10;
+  --violet: #CB81FF;
+  --white: #fff;
+  --greenDropZone: #D4FAE6;
+  --error-color: #FF5F00;
+  --green: #C0C0C0;
+  --dark-green: #787878;
+
+  --green-green: #2AE881;
+  --light-green: #D4FAE6;
+  --light--violet: #8F64AE;
+  --violet-background: #EACDFF;
+}
+
+p, h1,h2,h3,h4,h5,h6,span{
+  margin: 0;
+}

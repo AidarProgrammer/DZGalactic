@@ -1,0 +1,33 @@
+.hist{
+    display: flex;
+    flex-direction: column;
+    row-gap: 7.5px;
+}
+.histCont{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+}
+.delete{
+        padding: 30px;
+    background: var(--white);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.histor{
+    display: flex;
+    flex-direction: column;
+}
+.historyContainer{
+    display: flex;
+    justify-content: space-between;
+    row-gap: 7.5px;
+    flex-direction: column;
+
+}
+.historyItemContainer{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+}

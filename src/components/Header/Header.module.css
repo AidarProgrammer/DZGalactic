@@ -1,0 +1,22 @@
+.header{
+    padding: 40px 0;
+}
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 830px;
+    width: 100%;
+}
+.header__heading{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 89.5%;
+    padding: 5px;
+    background: var(--violet);
+}

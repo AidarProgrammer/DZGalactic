@@ -1,0 +1,54 @@
+.modalContent {
+    position: relative;
+}
+.mod{
+    position: fixed;
+    top: 253px;
+    max-height: calc(100vh - 263px); 
+    width: 1000px;
+    background: var(--white);
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    overflow-y: auto; 
+    overscroll-behavior: contain; 
+    left: 50%;
+    transform: translateX(-50%); 
+   
+}
+.mod::-webkit-scrollbar {
+    display: none;
+}
+.mod div{
+    padding: 20px;
+    box-sizing: border-box;
+    background: var(--violet-background);
+}
+.modalOverlay{
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(6, 6, 6, 0.3); 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    z-index: 1000; 
+}
+.closeButton{
+        font-size: 35px;
+    background: var(--black-color);
+    color: var(--white);
+    width: 70px;
+    border-radius: 10px;
+    height: 70px;
+    position: absolute;
+    right: -580px;
+    top: 210px;
+    cursor: pointer;
+    z-index: 2;
+}

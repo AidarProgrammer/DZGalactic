@@ -1,0 +1,9 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+}
+.paragraph{
+    font-size: 30px;
+}

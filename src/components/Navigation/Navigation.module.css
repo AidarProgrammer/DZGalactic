@@ -1,0 +1,17 @@
+.nav{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+.link{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 30px;
+    padding-bottom: 4px;
+}
+.active{
+    border-bottom: 2px solid var(--black-color);
+}

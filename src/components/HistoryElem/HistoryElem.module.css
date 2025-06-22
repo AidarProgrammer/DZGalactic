@@ -1,0 +1,42 @@
+.historyElem {
+    width: 100%;
+    background: var(--violet);
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+.nameElem,
+.nameElem__paragraph,
+.nameElem__date,
+.nameElem__success,
+.nameElem__notSuccess, 
+.nameElem__error {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.HistCont {
+    width: 100%;
+}
+
+.nameElem__error {
+    color: var(--light--violet);
+}
+
+.nameElem__error svg {
+    fill: var(--light--violet);
+}
+
+.nameElem__success svg{
+    fill: var(--black-color);
+}
+.clickable{
+    cursor: pointer;
+}

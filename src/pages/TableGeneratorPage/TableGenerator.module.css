@@ -1,0 +1,74 @@
+.paragraph{
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.content{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.button{
+    font-size: 35px;
+    padding: 20px 27px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.defaultState{
+    background: var(--green-green);
+    font-weight: 700;
+}
+
+.errorState{
+    background: var(--error-color);
+    color: var(--white);
+}
+.doneState{
+    background-color: var(--light-green);
+}
+.information{
+    font-size: 35px;
+    margin-top: 10px;
+}
+.content{
+    text-align: center;
+}
+.processState{
+    background: var(--violet);
+    width: 400px;
+    color: var(--violet);
+    position: relative;
+}
+.processState::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 54px;
+    background-image: url('/images/parse.png');
+    background-size: contain;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.closed{
+    display: none;
+}
+.error{
+    color: var(--error-color);
+}

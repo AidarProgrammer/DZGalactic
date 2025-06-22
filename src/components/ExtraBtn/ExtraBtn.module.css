@@ -1,0 +1,33 @@
+.cont {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+
+}
+
+.route {
+    background: var(--green-green);
+    border-radius: 25px;
+    padding: 20px 27px;
+    border: none;  
+}
+
+.routeLink {
+    
+    font-size: 35px;
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 700;
+}
+.deleteAll{
+    background: var(--black-color);
+    border-radius: 25px;
+    padding: 20px 27px;
+    border: none; 
+    color: var(--white);
+    font-weight: 700;
+    font-size: 35px;
+    cursor: pointer;
+}
