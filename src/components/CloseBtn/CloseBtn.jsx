@@ -5,6 +5,7 @@ export const CloseBtn = ({ onClick, className = '' }) => {
         <button 
             className={`${styles.closeButton} ${className}`}
             onClick={onClick}
+            data-testid="close-btn"
         >
             ×
         </button>
